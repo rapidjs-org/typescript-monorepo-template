@@ -1,0 +1,30 @@
+{
+	"version": "0.1.0",
+	"description": "[TODO]",
+	"author": "[TODO]",
+	"homepage": "[TODO]",
+	"keywords": [],
+	"repository": {
+		"type": "git",
+		"url": "git+[TODO]"
+	},
+	"bugs": {
+		"url": "[TODO]"
+	},
+	"main": "./build/api.js",
+	"types": "./types.d.ts",
+	"files": [
+		"./build/",
+		"./types.d.ts"
+	],
+	"scripts": {
+        "debug": "npm run copy-shared && npx tsc --project ./tsconfig.debug.json",
+        "debug:watch": "npm run debug -- --watch",
+        "build": "rm -rf ./build/ && rm -rf ./types/ && npx tsc --project ./tsconfig.build.json",
+		"test": "npx rjs-test unit ./test"
+	},
+	"devDependencies": {
+		"@rapidjs.org/testing": "^0.1.0",
+		"@rapidjs.org/testing-unit": "^0.1.0"
+	}
+}

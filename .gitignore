@@ -1,0 +1,7 @@
+node_modules/
+packages/*/build/
+packages/*/types/
+
+.DS_Store
+tsconfig.debug.tsbuildinfo
+package-lock.json
